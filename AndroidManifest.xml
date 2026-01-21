@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+        tools:targetApi="31">
+
+        <!-- LAUNCHER: WelcomeSetupActivity (First Time Setup) -->
+        <activity
+            android:name=".WelcomeSetupActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Main Activity -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+
+        <!-- Create Group Activity -->
+        <activity
+            android:name=".CreateGroupActivity"
+            android:exported="false" />
+
+        <!-- Join Group Activity -->
+        <activity
+            android:name=".JoinGroupActivity"
+            android:exported="false" />
+
+        <!-- Group Detail Activity -->
+        <activity
+            android:name=".GroupDetailActivity"
+            android:exported="false" />
+
+        <!-- Add Expense Activity -->
+        <activity
+            android:name=".AddExpenseActivity"
+            android:exported="false" />
+
+        <!-- Settle Up Activity -->
+        <activity
+            android:name=".SettleUpActivity"
+            android:exported="false" />
+
+        <!-- Join Requests Activity (NEW) -->
+        <activity
+            android:name=".JoinRequestsActivity"
+            android:exported="false" />
+
+    </application>
+
+</manifest>
+
+    <!-- Location: app/src/main/AndroidManifest.xml -->
